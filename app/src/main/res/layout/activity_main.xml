@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#d4d4d4"
+    tools:context="org.scorelab.soundcom.MainActivity">
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d4d4d4"
+        app:above_wave_color="@android:color/white"
+        app:blow_wave_color="@android:color/white"
+        app:progress="90"
+        app:wave_height="large"
+        app:wave_hz="fast"
+        app:wave_length="middle" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S  O  U  N  D  C  O  M"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#673AB7"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/linearLayout2"
+        android:layout_marginBottom="10dp">
+        <ImageButton
+            android:src="@drawable/play"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:elevation="3dp"
+            android:textSize="20sp"
+            android:backgroundTint="#D4D4D4"
+            android:textColor="#530091"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageButtonPlay"
+            android:layout_marginRight="30dp"
+            />
+        <ImageButton
+            android:src="@drawable/stop"
+            android:layout_width="50dp"
+            android:background="#D4D4D4"
+            android:layout_height="50dp"
+            android:elevation="3dp"
+            android:textSize="20sp"
+            android:textColor="#530091"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageButtonStop" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RECORDING TIME"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="42dp"
+        android:textColor="#808080"
+        android:gravity="center"
+
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAP MIC TO START"
+        android:textSize="12sp"
+        android:fontFamily="sans-serif-light"
+
+        android:textColor="#414141"
+        android:gravity="center"
+
+
+        android:layout_marginBottom="90dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/button1"
+        android:src="@drawable/mic"
+        android:onClick="startMethod"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:translationZ="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:scaleType="centerCrop"
+       android:src="@drawable/pattern"
+       android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">soundcom</string>
+
+    <string name="button1">START</string>
+    <string name="button2">STOP</string>
+    <string name="button3">SEND</string>
+</resources>
