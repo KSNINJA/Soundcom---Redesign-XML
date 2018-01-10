@@ -42,29 +42,32 @@
         android:gravity="center"
         android:layout_marginTop="30dp"
         android:id="@+id/linearLayout2"
+
         android:layout_marginBottom="10dp">
-        <ImageButton
-            android:src="@drawable/play"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:elevation="3dp"
-            android:textSize="20sp"
-            android:backgroundTint="#D4D4D4"
-            android:textColor="#530091"
-            android:scaleType="centerCrop"
-            android:id="@+id/imageButtonPlay"
-            android:layout_marginRight="30dp"
-            />
-        <ImageButton
-            android:src="@drawable/stop"
-            android:layout_width="50dp"
-            android:background="#D4D4D4"
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:elevation="3dp"
-            android:textSize="20sp"
-            android:textColor="#530091"
-            android:scaleType="centerCrop"
-            android:id="@+id/imageButtonStop" />
+            android:text="PLAY"
+            android:backgroundTint="#FFF"
+            android:textColor="#AF12BD"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:text="STOP"
+            android:backgroundTint="#AF12BD"
+            android:textColor="#FFF"/>
 
     </LinearLayout>
 
@@ -73,6 +76,7 @@
         android:layout_height="wrap_content"
         android:text="RECORDING TIME"
         android:textSize="16sp"
+
         android:fontFamily="sans-serif-light"
         android:layout_marginTop="42dp"
         android:textColor="#808080"
